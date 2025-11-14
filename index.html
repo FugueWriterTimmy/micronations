@@ -1,77 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Micronation Hub</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(180deg, #e0e6ff, #ffffff);
-        }
-        header {
-            background: #1a2a6c;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 32px;
-            font-weight: bold;
-        }
-        nav {
-            display: flex;
-            background: #233a8a;
-            padding: 10px;
-            gap: 15px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 16px;
-            border-radius: 6px;
-            transition: background 0.2s;
-        }
-        nav a:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 25px;
-        }
-        h2 {
-            margin-top: 0;
-        }
-        p {
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micronations Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f6f6f6;
+      text-align: center;
+    }
+    header {
+      background: #3b3b98;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .nav {
+      background: #dcdcff;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .nav button {
+      background: #4b4bd1;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .nav button:hover {
+      background: #22227a;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-    <header>Welcome to the Micronation Hub</header>
+  <header>Welcome to the Micronations Hub</header>
 
-    <nav>
-        <a href="fuguewritertimmy.github.io/micronations/contrapunctia.html">Contrapunctia</a>
-        <a href="fuguewritertimmy.github.io/micronations/curryland.html">Curryland</a>
-    </nav>
+  <div class="nav">
+    <button onclick="window.location='contrapunctia.html'">Contrapunctia</button>
+    <button onclick="window.location='curryland.html'">Curryland</button>
+  </div>
 
-    <div class="container">
-        <h2>What Is a Micronation?</h2>
-        <p>
-            A micronation is a small, self-declared entity that claims to be an independent nation. People
-            create micronations for many different reasons, be it political statements, worldbuilding, or simply
-            because it’s entertaining to imagine a tiny country with its own laws, symbols, and
-            culture.
-        </p>
-    </div>
-
-    <script>
-        function addTab(page) {
-            const current = window.location.href;
-            if (!current.includes(page)) {
-                window.location.href = current + page;
-            }
-        }
-    </script>
+  <div class="container">
+    <h2>What Is a Micronation?</h2>
+    <p>
+      A <strong>micronation</strong> is a small, self-declared country created for fun, culture,
+      politics, art, personal expression, or just because someone woke up and decided:
+      "Yes. I require my own sovereign realm." They usually aren’t recognized by any
+      actual governments, but they can still have flags, money, laws, and even
+      international diplomacy (mostly consisting of very polite emails).
+    </p>
+  </div>
 </body>
 </html>
